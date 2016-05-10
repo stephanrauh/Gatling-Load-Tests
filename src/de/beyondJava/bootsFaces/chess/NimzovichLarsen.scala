@@ -1,4 +1,4 @@
-package de.beyondjava.chess
+package de.beyondJava.bootsFaces.chess
 
 import scala.concurrent.duration._
 
@@ -20,11 +20,9 @@ class NimzovichLarsen extends Simulation {
 	val headers_0 = Map(
 		"Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
 		"Accept-Encoding" -> "gzip, deflate, sdch",
-		"AlexaToolbar-ALX_NS_PH" -> "AlexaToolbar/alx-4.0",
 		"Upgrade-Insecure-Requests" -> "1")
 
 	val headers_1 = Map(
-		"AlexaToolbar-ALX_NS_PH" -> "AlexaToolbar/alx-4.0",
 		"Content-Type" -> "application/x-www-form-urlencoded; charset=UTF-8",
 		"Faces-Request" -> "partial/ajax",
 		"Origin" -> "http://127.0.0.1:8080")
@@ -35,7 +33,7 @@ class NimzovichLarsen extends Simulation {
 		.exec(http("request_0")
 			.get("/BootsFacesChess/")
 			.headers(headers_0))
-		.pause(6)
+		.pause(2)
 		.exec(http("request_1")
 			.post("/BootsFacesChess/index.jsf")
 			.headers(headers_1)
@@ -98,7 +96,7 @@ class NimzovichLarsen extends Simulation {
 			.formParam("javax.faces.partial.execute", "form")
 			.formParam("javax.faces.partial.render", "form")
 			.formParam("form", "form")))
-		.pause(6)
+		.pause(1)
 		.exec(http("request_5")
 			.post("/BootsFacesChess/index.jsf")
 			.headers(headers_1)
@@ -161,7 +159,7 @@ class NimzovichLarsen extends Simulation {
 			.formParam("javax.faces.partial.execute", "form")
 			.formParam("javax.faces.partial.render", "form")
 			.formParam("form", "form")))
-		.pause(4)
+		.pause(1)
 		.exec(http("request_9")
 			.post("/BootsFacesChess/index.jsf")
 			.headers(headers_1)
@@ -224,7 +222,7 @@ class NimzovichLarsen extends Simulation {
 			.formParam("javax.faces.partial.execute", "form")
 			.formParam("javax.faces.partial.render", "form")
 			.formParam("form", "form")))
-		.pause(9)
+		.pause(1)
 		.exec(http("request_13")
 			.post("/BootsFacesChess/index.jsf")
 			.headers(headers_1)
@@ -287,7 +285,7 @@ class NimzovichLarsen extends Simulation {
 			.formParam("javax.faces.partial.execute", "form")
 			.formParam("javax.faces.partial.render", "form")
 			.formParam("form", "form")))
-		.pause(7)
+		.pause(1)
 		.exec(http("request_17")
 			.post("/BootsFacesChess/index.jsf")
 			.headers(headers_1)
@@ -350,7 +348,7 @@ class NimzovichLarsen extends Simulation {
 			.formParam("javax.faces.partial.execute", "form")
 			.formParam("javax.faces.partial.render", "form")
 			.formParam("form", "form")))
-		.pause(20)
+		.pause(1)
 		.exec(http("request_21")
 			.post("/BootsFacesChess/index.jsf")
 			.headers(headers_1)
@@ -414,7 +412,7 @@ class NimzovichLarsen extends Simulation {
 			.formParam("javax.faces.partial.execute", "form")
 			.formParam("javax.faces.partial.render", "form")
 			.formParam("form", "form")))
-		.pause(6)
+		.pause(1)
 		.exec(http("request_25")
 			.post("/BootsFacesChess/index.jsf")
 			.headers(headers_1)
