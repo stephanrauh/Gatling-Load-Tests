@@ -1,0 +1,10 @@
+{
+  "simulation": "de.beyondJava.bootsFaces.chess.ItalianOpening",
+  "simulationId": "italianopening",
+  "start": 1462701734159,
+  "description": "",
+  "scenarios": ["ItalianOpening"],
+  "assertions": [
+
+  ]
+}
